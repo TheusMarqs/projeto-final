@@ -1,0 +1,66 @@
+{
+  "Professores": [
+    {
+      "id": 1,
+      "name": "josé",
+      "phone": 1125257271,
+      "subject": "português"
+    },
+    {
+      "id": 2,
+      "name": "ronaldinho",
+      "phone": 11523617371,
+      "subject": "Matematica"
+    },
+    {
+      "id": 3,
+      "name": "antônio",
+      "phone": 11954710581,
+      "subject": "geografia"
+    },
+    {
+      "id": 4,
+      "name": "2'2",
+      "phone": 222,
+      "subject": "2'2'222"
+    },
+    {
+      "id": 5,
+      "name": "313",
+      "phone": 313,
+      "subject": "313133131"
+    },
+    {
+      "id": 6,
+      "name": "13",
+      "phone": 313,
+      "subject": "311"
+    },
+    {
+      "id": 7,
+      "name": "matheusss",
+      "phone": 21231,
+      "subject": "31311111"
+    }
+  ],
+  "Alunos": [
+    {
+      "id": 1,
+      "age": 18,
+      "name": "matheus",
+      "phone": 11942528100
+    },
+    {
+      "id": 2,
+      "age": 17,
+      "name": "marcos",
+      "phone": 15426235672
+    },
+    {
+      "id": 3,
+      "age": 25,
+      "name": "thiago",
+      "phone": 11927591659
+    }
+  ]
+}

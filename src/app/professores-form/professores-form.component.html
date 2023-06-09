@@ -1,0 +1,39 @@
+<div class="row mt-4">
+    <div class="col-8 m-auto">
+        <form [formGroup]="formGroupProfessor">
+            <div class="mb-3">
+                <div class="display-6 text-center">
+                    Cadastro de professores
+                </div>
+                <label for="name" class="form-label">Nome:</label>
+                <input type="text" formControlName="name" class="form-control" id="name" placeholder="Nome">
+                <div *ngIf="submitted && name.invalid">
+                    <small class="text-danger">Nome Invalido!</small>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="numero" class="form-label">Celular:</label>
+                <input type="number" formControlName="phone" class="form-control" id="numero" placeholder="Telefone">
+                <div *ngIf="submitted && phone.invalid">
+                    <small class="text-danger">Número Invalido!</small>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="subject" class="form-label">Matéria:</label>
+                <input type="text" formControlName="subject" class="form-control" id="subject" placeholder="Matéria">
+                <div *ngIf="submitted && subject.invalid">
+                    <small class="text-danger">Matéria Invalida!</small>
+                </div>
+            </div>
+
+            <div class="mb-3 d-flex justify-content-center">
+                <button class="btn btn-dark me-2" (click)="save()">Salvar</button>
+                <button class="btn btn-primary me-2" (click)="exibir()" [textContent]="txtBtn"></button>
+                <button class="btn btn-danger" (click)="clean()">Limpar</button>
+            </div>
+
+        </form>
+    </div>
+</div>

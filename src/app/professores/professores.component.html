@@ -1,0 +1,30 @@
+<app-professores-form (cleanEvent)="onCleanEvent($event)" [professor]="professor" (saveEvent)="onSaveEvent($event)" (exibirEvent)="onExibirEvent($event)"></app-professores-form>
+
+<div class="row">
+  <div class="col-10 m-auto">
+
+    <table *ngIf="exibirBtn" id="table" class="table table-bordered border-dark">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Telefone</th>
+          <th scope="col">Matéria</th>
+          <th scope="col">Opções</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let professores of professores">
+          <th scope="row">{{professores.id}}</th>
+          <td>{{professores.name | titlecase}}</td>
+          <td>{{professores.phone}}</td>
+          <td>{{professores.subject | titlecase}}</td>
+          <td>
+            <button class="btn btn-success me-1" (click)="edit(professores)">Editar</button>
+            <button class="btn btn-danger" (click)="delete(professores)">Excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

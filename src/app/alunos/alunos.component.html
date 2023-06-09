@@ -1,0 +1,30 @@
+<div class="row mt-4">
+  <div class="col-8 m-auto">
+
+    <table class="table table-bordered border-dark mt-3">
+      <thead class="table-dark ">
+        <tr class="table-active">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Idade</th>
+          <th scope="col">Telefone</th>
+          <th scope="col">Opções</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let aluno of alunos">
+          <th scope="row">{{aluno.id}}</th>
+          <td>{{aluno.name | titlecase}}</td>
+          <td>{{aluno.age}}</td>
+          <td>{{aluno.phone}}</td>
+          <td>
+            <button class="btn btn-success me-1" (click)="edit(aluno)">Editar</button>
+            <button class="btn btn-danger" (click)="delete(aluno)">Excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-dark" (click)="create()">Novo Aluno</button>
+  </div>
+</div>
